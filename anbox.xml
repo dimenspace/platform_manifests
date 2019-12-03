@@ -12,7 +12,9 @@
     <remove-project name="platform/system/core" />
     <remove-project name="platform/system/vold" />
 
-    <project path="vendor/anbox" name="anbox" remote="anbox" />
+    <project path="vendor/anbox" name="anbox" remote="anbox">
+        <linkfile src="scripts/create-package.sh" dest="create-package.sh" />
+    </project>
     <project path="device/generic/goldfish" name="device_generic_goldfish" remote="anbox" />
     <project path="device/generic/goldfish-opengl" name="device_generic_goldfish-opengl" remote="anbox" />
     <project path="frameworks/av" name="platform_frameworks_av" remote="anbox" />
