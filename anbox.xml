@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote  name="anbox" fetch="https://github.com/sageyun1057/" revision="anbox10" />
+    <remote  name="dz_anbox" fetch="https://github.com/dimenspace/" revision="anbox10" />
 
     <remove-project name="device/generic/goldfish" />
     <remove-project name="device/generic/goldfish-opengl" />
@@ -19,9 +20,9 @@
     <project path="device/generic/goldfish-opengl" name="device_generic_goldfish-opengl" remote="anbox" />
     <project path="frameworks/av" name="platform_frameworks_av" remote="anbox" />
     <project path="frameworks/base" name="platform_frameworks_base" remote="anbox" />
-    <project path="frameworks/native" name="platform_frameworks_native" remote="anbox" />
+    <project path="frameworks/native" name="platform_frameworks_native" remote="dz_anbox" />
     <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="anbox" />
     <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="anbox" />
-    <project path="system/core" name="platform_system_core" remote="anbox" />
+    <project path="system/core" name="platform_system_core" remote="dz_anbox" />
     <project path="system/vold" name="platform_system_vold" remote="anbox" />
 </manifest>
